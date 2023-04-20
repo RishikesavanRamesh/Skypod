@@ -36,13 +36,13 @@ jobs:
     - name: Build and push image2
       uses: docker/build-push-action@v2
       with:
-        context: .././image2
+        context: ./image2
         push: true
         tags: ${{ env.IMAGE2_NAME }}:${{ github.sha }}
 
     - name: Build and push image3
       uses: docker/build-push-action@v2
       with:
-        context: .././image3
+        context: ./image3
         push: true
         tags: ${{ env.IMAGE3_NAME }}:${{ github.sha }}
