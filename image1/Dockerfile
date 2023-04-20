@@ -2,8 +2,7 @@ FROM osrf/ros:humble-desktop
 
 # Install additional ROS packages and dependencies as needed
 RUN apt-get update && apt-get install -y \
-    ros-$ROS_DISTRO-navigation \
-    && rm -rf /var/lib/apt/lists/*
+    emacs 
 
 # Set up a colcon workspace
 RUN mkdir -p /colcon_ws/src
